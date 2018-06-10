@@ -1,6 +1,7 @@
 <h3>Exercice 2 : mise en place d'un décorateur Viewchild </h3>
 <br />
-<input type="text" >
+<!-- Ajout d'une référence sur l'Element INPUT et d'un listener sur l'évènement `input` -->
+<input type="text" #myInputText (input)="onInput()">
 <br />
 <br />
 <span> valeur de l'input : {{ valeur }}</span>

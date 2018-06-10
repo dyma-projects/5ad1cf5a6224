@@ -2,7 +2,8 @@
 <br/>
 <br/>
 <h3>Exercice 1 : mise en place de Output et Input </h3>
-<app-exercice1-enfant></app-exercice1-enfant>
+<app-exercice1-enfant [cmptToEnfant]="compteur" (changeCmpt)="majCmpt($event)"></app-exercice1-enfant>
 <br/>
-<span> compteur : {{ result }}</span>
+<!-- Je renome la string interpolation `result` en `compteur` afin d'utiliser la variable compteur de la classe et éviter d'utiliser une seconde variable -->
+<span> compteur : {{ compteur }}</span>
 <hr>
